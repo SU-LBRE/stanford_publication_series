@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Stanford Publication Series feature.
+ */
+
+include_once 'stanford_publication_series.features.inc';
