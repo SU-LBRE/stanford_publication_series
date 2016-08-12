@@ -32,6 +32,9 @@ function stanford_publication_series_field_default_field_instances() {
           'custom_trim' => '',
           'custom_ucfirst' => '',
           'custom_ucwords' => '',
+          'quickedit' => array(
+            'editor' => 'plain_text',
+          ),
         ),
         'type' => 'text_default',
         'weight' => 1,
@@ -51,6 +54,9 @@ function stanford_publication_series_field_default_field_instances() {
           'custom_trim' => '',
           'custom_ucfirst' => '',
           'custom_ucwords' => '',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -104,6 +110,9 @@ function stanford_publication_series_field_default_field_instances() {
           'delete' => '',
           'description' => 0,
           'edit' => '',
+          'quickedit' => array(
+            'editor' => 'form',
+          ),
           'view_mode' => 'stanford_large_scaled',
         ),
         'type' => 'field_collection_view',
@@ -133,6 +142,43 @@ function stanford_publication_series_field_default_field_instances() {
   );
 
   // Exported field_instance:
+  // 'node-stanford_publication_series-field_s_pub_type'
+  $field_instances['node-stanford_publication_series-field_s_pub_type'] = array(
+    'bundle' => 'stanford_publication_series',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'This identifies the type of publication. Select one.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 2,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_s_pub_type',
+    'label' => 'Type',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 3,
+    ),
+  );
+
+  // Exported field_instance:
   // 'node-stanford_publication_series-field_s_pubseries_sorting_weight'
   $field_instances['node-stanford_publication_series-field_s_pubseries_sorting_weight'] = array(
     'bundle' => 'stanford_publication_series',
@@ -148,7 +194,7 @@ function stanford_publication_series_field_default_field_instances() {
         'label' => 'inline',
         'settings' => array(),
         'type' => 'hidden',
-        'weight' => 2,
+        'weight' => 4,
       ),
       'teaser' => array(
         'label' => 'above',
@@ -177,12 +223,53 @@ function stanford_publication_series_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance:
+  // 'node-stanford_publication_series-field_stanford_subsite_sub_tags'
+  $field_instances['node-stanford_publication_series-field_stanford_subsite_sub_tags'] = array(
+    'bundle' => 'stanford_publication_series',
+    'default_value' => NULL,
+    'deleted' => 0,
+    'description' => 'Enter the value of the subsite.',
+    'display' => array(
+      'default' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 3,
+      ),
+      'teaser' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'entity_type' => 'node',
+    'field_name' => 'field_stanford_subsite_sub_tags',
+    'label' => 'Subsite Tags',
+    'required' => 0,
+    'settings' => array(
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'options',
+      'settings' => array(),
+      'type' => 'options_buttons',
+      'weight' => 4,
+    ),
+  );
+
   // Translatables
   // Included for use with string extractors like potx.
   t('Body');
+  t('Enter the value of the subsite.');
   t('Featured Image');
   t('Sorting Weight');
+  t('Subsite Tags');
   t('This collection of fields displays an optional featured image, image credits, and caption.');
+  t('This identifies the type of publication. Select one.');
+  t('Type');
 
   return $field_instances;
 }

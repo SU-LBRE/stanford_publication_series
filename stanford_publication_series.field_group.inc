@@ -21,7 +21,7 @@ function stanford_publication_series_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Advanced',
-    'weight' => '3',
+    'weight' => '5',
     'children' => array(
       0 => 'field_s_pubseries_sorting_weight',
     ),
