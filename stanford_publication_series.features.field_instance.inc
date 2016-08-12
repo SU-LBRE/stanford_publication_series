@@ -32,9 +32,6 @@ function stanford_publication_series_field_default_field_instances() {
           'custom_trim' => '',
           'custom_ucfirst' => '',
           'custom_ucwords' => '',
-          'quickedit' => array(
-            'editor' => 'plain_text',
-          ),
         ),
         'type' => 'text_default',
         'weight' => 1,
@@ -54,9 +51,6 @@ function stanford_publication_series_field_default_field_instances() {
           'custom_trim' => '',
           'custom_ucfirst' => '',
           'custom_ucwords' => '',
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
           'trim_length' => 600,
         ),
         'type' => 'text_summary_or_trimmed',
@@ -110,9 +104,6 @@ function stanford_publication_series_field_default_field_instances() {
           'delete' => '',
           'description' => 0,
           'edit' => '',
-          'quickedit' => array(
-            'editor' => 'form',
-          ),
           'view_mode' => 'stanford_large_scaled',
         ),
         'type' => 'field_collection_view',
