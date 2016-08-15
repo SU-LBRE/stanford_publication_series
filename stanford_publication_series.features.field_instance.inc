@@ -10,7 +10,7 @@
 function stanford_publication_series_field_default_field_instances() {
   $field_instances = array();
 
-  // Exported field_instance: 'node-stanford_publication_series-body'
+  // Exported field_instance: 'node-stanford_publication_series-body'.
   $field_instances['node-stanford_publication_series-body'] = array(
     'bundle' => 'stanford_publication_series',
     'default_value' => NULL,
@@ -78,7 +78,7 @@ function stanford_publication_series_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-stanford_publication_series-field_s_image_info'
+  // 'node-stanford_publication_series-field_s_image_info'.
   $field_instances['node-stanford_publication_series-field_s_image_info'] = array(
     'bundle' => 'stanford_publication_series',
     'default_value' => NULL,
@@ -133,44 +133,7 @@ function stanford_publication_series_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-stanford_publication_series-field_s_pub_type'
-  $field_instances['node-stanford_publication_series-field_s_pub_type'] = array(
-    'bundle' => 'stanford_publication_series',
-    'default_value' => NULL,
-    'deleted' => 0,
-    'description' => 'This identifies the type of publication. Select one.',
-    'display' => array(
-      'default' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 2,
-      ),
-      'teaser' => array(
-        'label' => 'above',
-        'settings' => array(),
-        'type' => 'hidden',
-        'weight' => 0,
-      ),
-    ),
-    'entity_type' => 'node',
-    'field_name' => 'field_s_pub_type',
-    'label' => 'Type',
-    'required' => 0,
-    'settings' => array(
-      'user_register_form' => FALSE,
-    ),
-    'widget' => array(
-      'active' => 1,
-      'module' => 'options',
-      'settings' => array(),
-      'type' => 'options_buttons',
-      'weight' => 3,
-    ),
-  );
-
-  // Exported field_instance:
-  // 'node-stanford_publication_series-field_s_pubseries_sorting_weight'
+  // 'node-stanford_publication_series-field_s_pubseries_sorting_weight'.
   $field_instances['node-stanford_publication_series-field_s_pubseries_sorting_weight'] = array(
     'bundle' => 'stanford_publication_series',
     'default_value' => array(
@@ -215,7 +178,7 @@ function stanford_publication_series_field_default_field_instances() {
   );
 
   // Exported field_instance:
-  // 'node-stanford_publication_series-field_stanford_subsite_sub_tags'
+  // 'node-stanford_publication_series-field_stanford_subsite_sub_tags'.
   $field_instances['node-stanford_publication_series-field_stanford_subsite_sub_tags'] = array(
     'bundle' => 'stanford_publication_series',
     'default_value' => NULL,
@@ -259,8 +222,6 @@ function stanford_publication_series_field_default_field_instances() {
   t('Sorting Weight');
   t('Subsite Tags');
   t('This collection of fields displays an optional featured image, image credits, and caption.');
-  t('This identifies the type of publication. Select one.');
-  t('Type');
 
   return $field_instances;
 }

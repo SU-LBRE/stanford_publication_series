@@ -10,7 +10,7 @@
 function stanford_publication_series_field_default_field_bases() {
   $field_bases = array();
 
-  // Exported field_base: 'body'
+  // Exported field_base: 'body'.
   $field_bases['body'] = array(
     'active' => 1,
     'cardinality' => 1,
@@ -31,7 +31,7 @@ function stanford_publication_series_field_default_field_bases() {
     'type' => 'text_with_summary',
   );
 
-  // Exported field_base: 'field_s_pubseries_sorting_weight'
+  // Exported field_base: 'field_s_pubseries_sorting_weight'.
   $field_bases['field_s_pubseries_sorting_weight'] = array(
     'active' => 1,
     'cardinality' => 1,
