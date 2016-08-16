@@ -50,19 +50,19 @@ function stanford_publication_series_strongarm() {
     'extra_fields' => array(
       'form' => array(
         'metatags' => array(
-          'weight' => '7',
+          'weight' => '9',
         ),
         'title' => array(
           'weight' => '0',
         ),
         'path' => array(
-          'weight' => '6',
+          'weight' => '8',
         ),
         'redirect' => array(
-          'weight' => '5',
+          'weight' => '7',
         ),
         'xmlsitemap' => array(
-          'weight' => '4',
+          'weight' => '6',
         ),
       ),
       'display' => array(),
@@ -108,6 +108,13 @@ function stanford_publication_series_strongarm() {
   $strongarm->name = 'node_submitted_stanford_publication_series';
   $strongarm->value = 0;
   $export['node_submitted_stanford_publication_series'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'pathauto_node_stanford_publication_series_pattern';
+  $strongarm->value = 'documents/[node:title]';
+  $export['pathauto_node_stanford_publication_series_pattern'] = $strongarm;
 
   return $export;
 }

@@ -8,7 +8,7 @@
  * Implements hook_field_group_info().
  */
 function stanford_publication_series_field_group_info() {
-  $export = array();
+  $field_groups = array();
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -21,7 +21,7 @@ function stanford_publication_series_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Advanced',
-    'weight' => '3',
+    'weight' => '5',
     'children' => array(
       0 => 'field_s_pubseries_sorting_weight',
     ),
@@ -36,7 +36,7 @@ function stanford_publication_series_field_group_info() {
       'formatter' => 'collapsed',
     ),
   );
-  $export['group_advanced|node|stanford_publication_series|form'] = $field_group;
+  $field_groups['group_advanced|node|stanford_publication_series|form'] = $field_group;
 
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
@@ -68,7 +68,12 @@ function stanford_publication_series_field_group_info() {
       'formatter' => 'open',
     ),
   );
-  $export['group_featured_image_style|node|stanford_publication_series|default'] = $field_group;
+  $field_groups['group_featured_image_style|node|stanford_publication_series|default'] = $field_group;
 
-  return $export;
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Advanced');
+  t('Featured Image Style');
+
+  return $field_groups;
 }
